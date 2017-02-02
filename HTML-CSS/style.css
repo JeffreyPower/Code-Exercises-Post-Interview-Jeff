@@ -1,0 +1,123 @@
+html,body,div,
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1240px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f6f6f6;
+}
+
+.topText{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 300;
+    flex: 1;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #666;
+    flex: 1;
+}
+
+h5 {
+    font-weight: 400;
+    line-height: 1.1em;
+}
+
+h6 {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Box Layout */
+
+label {
+    color: #666;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+
+.boxs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2%;
+    flex: 1 16%;
+
+    background-color: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+}
+
+.box-image img {
+    width: 100%;
+}
+
+.box-info {
+    margin-top: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Four images in a row */
+@media ( max-width: 920px ) {
+
+    .box-card {
+        flex: 1 21%;
+    }
+
+}
+
+/* Two images in a row */
+@media ( max-width: 650px ) {
+
+    .box-card {
+        flex: 1 46%;
+    }
+
+}
+
+/* One images in a row */
+@media ( max-width: 480px ) {
+    /*Following can overwrite h1 and h2 in phone screen to make text size smaller*/
+    h1 {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    .box-card {
+        flex: 1 96%;
+    }
+
+}
